@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MessagesController@index');
+
+Route::get('messages','MessagesController@index')->name('messages.index');
+
+Route::resource('messages','MessagesController');
+
+Route::get('messages/{id}/edit','MessagesController@edit')->name('messages.edit');
