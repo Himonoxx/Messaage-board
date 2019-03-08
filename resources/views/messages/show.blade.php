@@ -10,7 +10,11 @@
             <td>{{$message->id}}</td>
         </tr>
         <tr>
-            <th>メッセージ</th>
+            <th>Title</th>
+            <td>{{$message->title}}</td>
+        </tr>
+        <tr>
+            <th>Message</th>
             <td>{{$message->content}}</td>
         </tr>
     </table>
