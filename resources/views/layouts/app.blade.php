@@ -7,8 +7,11 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     </head>
     <body>
-        @include('commons.navbar')
+       @include('commons.navbar')
+        
         <div class="container">
+            @include('commons.error_messages')
+            
             @yield('content')
         </div>
         
